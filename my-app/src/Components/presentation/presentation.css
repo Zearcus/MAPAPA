@@ -1,0 +1,28 @@
+div.MainPage{
+    background-color: rgba(0, 119, 255, 0.493);
+    height: auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+p.presentation{
+    color: pink;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.Profile{
+    width: 200px;
+}
+
+.ProfileImage{
+    width: 100%;
+    border-radius: 2000px 2000px 2000px 2000px;
+}

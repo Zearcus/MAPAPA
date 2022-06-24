@@ -1,0 +1,47 @@
+
+.barMenu{
+    width: 100%;
+    /* margin-left: 500px; */
+    margin-top: 0;
+    text-align : center;
+}
+
+/* .shadow{
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+}
+
+.shadow:before,
+.shadow:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    bottom: 0;
+} */
+
+.navBar a{
+    text-decoration:none; 
+    text-align: center;
+    color: black;
+   /* margin-inline: 150px;  */
+   margin-top: 10px;
+   margin-left: 50px;
+}
+
+.Blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 4s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+
