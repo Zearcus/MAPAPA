@@ -43,10 +43,10 @@ function Home(props) {
               </p>
 
                 <h2>Présentation de l'équipe</h2>
-                <Container sm="12" md="6" lg="6">
+                
                   <Row>
-                    <Col>
-                      {props.profiles.data && props.profiles.data.map((profiles, i) => (
+                  {props.profiles.data && props.profiles.data.map((profiles, i) => (
+                    <Col sm md lg>
                         <div key={i}>
                             <Card className="Profile">
                             
@@ -54,16 +54,15 @@ function Home(props) {
                             <Card.Body>
                               <Card.Title>{profiles.attributes.Name}</Card.Title>
                                 <Card.Text>
-                                  {}
+                                  {profiles.attributes.Description}
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                         </div>
-
-                      ))} 
-                    </Col>          
+                    </Col> 
+                    ))}          
                   </Row>
-                </Container>
+                
 
             </div>
           </div> 

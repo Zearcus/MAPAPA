@@ -31,7 +31,7 @@ class App extends Component {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home profiles={this.state.profiles} />} />
-          <Route exact path='/Admin' element={<Admin_panel />} />
+          <Route exact path='/123456789/Admin' element={<Admin_panel />} />
         </Routes>
       </Router>
     )

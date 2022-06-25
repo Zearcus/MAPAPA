@@ -20,9 +20,13 @@ h2{
 
 .Profile{
     width: 200px;
+    margin: auto;
 }
 
 .ProfileImage{
-    width: 100%;
-    border-radius: 2000px 2000px 2000px 2000px;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
