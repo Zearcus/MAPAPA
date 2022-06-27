@@ -10,23 +10,32 @@ function Home(props) {
   
     return (
         <div>
+          
           <Bar_menu/>
-          <div className="MainPage">
-          <h1>
-           <AnimatedText
-              type='words'
-              animationType='lights'
-              interval={0.04}
-              duration={0.8}
-              animation={{
-                y: '100px',
-                ease: 'ease',
-              }}
-            >
-              Bienvenue dans Mapapa Studio
-            </AnimatedText>
-          </h1>
 
+          <div className="MainPage">
+
+          <Row>
+            <Col sm md lg>
+              <h1>
+              <AnimatedText
+                  type='words'
+                  animationType='lights'
+                  interval={0.04}
+                  duration={0.8}
+                  animation={{
+                    y: '100px',
+                    ease: 'ease',
+                  }}
+                >
+                  Bienvenue dans Mapapa Studio
+                </AnimatedText>
+              </h1>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
               <p className="presentation">
                 <AnimatedText
                   type='words'
@@ -41,9 +50,12 @@ function Home(props) {
                   Description du studio MAPAPA
                 </AnimatedText>
               </p>
+            </Col>
+          </Row>
 
-                <h2>Présentation de l'équipe</h2>
-                
+
+          <h2>Présentation de l'équipe</h2>
+                <Container fluid>
                   <Row>
                   {props.profiles.data && props.profiles.data.map((profiles, i) => (
                     <Col sm md lg>
@@ -62,7 +74,7 @@ function Home(props) {
                     </Col> 
                     ))}          
                   </Row>
-                
+                </Container>
 
             </div>
           </div> 

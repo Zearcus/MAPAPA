@@ -1,9 +1,7 @@
 
 .barMenu{
-    width: 100%;
-    /* margin-left: 500px; */
-    margin-top: 0;
-    text-align : center;
+  width: 100%;
+  justify-content: center;
 }
 
 /* .shadow{
@@ -23,11 +21,10 @@
 
 .navBar a{
     text-decoration:none; 
-    text-align: center;
     color: black;
-   /* margin-inline: 150px;  */
+    width: 100%;
    margin-top: 10px;
-   margin-left: 50px;
+   margin-left: 20px;
 }
 
 .Blink {
