@@ -20,12 +20,12 @@
 } */
 
 .navBar a{
-    text-decoration:none; 
-    color: black;
-    width: 100%;
-   margin-top: 10px;
-   margin-left: 20px;
+  text-decoration:none; 
+  color: black;
 }
+
+
+/* Blinking badge New */
 
 .Blink {
     animation: blink-animation 1s steps(5, start) infinite;
