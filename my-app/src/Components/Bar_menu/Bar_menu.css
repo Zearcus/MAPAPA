@@ -1,26 +1,16 @@
 
+/* Title or Logo part */
+
 .barMenu{
   width: 100%;
-  justify-content: center;
 }
 
-/* .shadow{
-    position: relative;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-}
 
-.shadow:before,
-.shadow:after{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    top: 50%;
-    bottom: 0;
-} */
+/* Nav Game part */
 
-.navBar a{
+.m-auto a{
   text-decoration:none; 
+  text-align: center;
   color: black;
 }
 
@@ -41,4 +31,19 @@
       visibility: hidden;
     }
 }
+/* Shadow part below the navbar */
 
+/* .shadow{
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+}
+
+.shadow:before,
+.shadow:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    bottom: 0;
+} */

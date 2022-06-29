@@ -8,14 +8,16 @@ class Bar_menu extends Component {
   render() {
     return (
         
-      <Navbar className="shadow barMenu" expand="lg"  bg="light">
-          <Navbar.Brand className="Title">Mapapa</Navbar.Brand>
+      <Navbar className="shadow barMenu" expand="lg"  bg="light" sticky="top">
+        <Container>
+          <Navbar.Brand className="m-auto">Mapapa</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="navBar">
+            <Nav className="m-auto">
               <Link to="/Admin">Yeti Smash<Badge className="Blink" pill bg="danger">New</Badge></Link>
             </Nav>
           </Navbar.Collapse>
+        </Container>
       </Navbar>
        
     )

@@ -19,14 +19,14 @@ h2{
 }
 
 .Profile{
-    width: 200px;
-    margin: auto;
+  margin: auto;
+   
 }
 
-.ProfileImage{
+/* .ProfileImage{
     width: 100px;
     height: 100px;
     margin-left: 50px;
     object-fit: cover;
     border-radius: 50%;
-}
+} */
