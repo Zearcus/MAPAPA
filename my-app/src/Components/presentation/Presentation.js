@@ -57,17 +57,22 @@ function Home(props) {
 
             <h2>Présentation de l'équipe</h2>
             <Container fluid>
-              <Row>
-              {props.profiles.data && props.profiles.data.map((profiles, i) => (
-                <Col sm md lg>
+              
+              <Row className="Profile">
+                {props.profiles.data && props.profiles.data.map((profiles, i) => (
+                <Col sm="auto" md="auto" lg="auto" >
+
+                  {/* put className="Profile" in Col if you've a problem */}
                     <div key={i}>
-                      <UserCard
-                          float
-                          header={profiles.attributes.Cover.data.attributes.url && `http://localhost:1337${profiles.attributes.Cover.data.attributes.url}`}
-                          avatar={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}
-                          name={profiles.attributes.Name}
-                          positionName={profiles.attributes.Description}
-                      />
+
+                        <UserCard
+                            float
+                            header={profiles.attributes.Cover.data.attributes.url && `http://localhost:1337${profiles.attributes.Cover.data.attributes.url}`}
+                            avatar={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}
+                            name={profiles.attributes.Name}
+                            positionName={profiles.attributes.Description}
+                        />
+
                         {/* <Card className="Profile">
                         
                         <Card.Img variant="top" className="ProfileImage" src={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}/>
@@ -80,8 +85,9 @@ function Home(props) {
                     </Card> */}
                     </div>
                 </Col> 
-                ))}          
+                ))}
               </Row>
+              
             </Container>
 
 

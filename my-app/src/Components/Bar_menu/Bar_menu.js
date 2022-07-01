@@ -10,7 +10,7 @@ class Bar_menu extends Component {
         
       <Navbar className="shadow barMenu" expand="lg"  bg="light" sticky="top">
         <Container>
-          <Navbar.Brand className="m-auto">Mapapa</Navbar.Brand>
+          <Navbar.Brand >Mapapa</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="m-auto">
