@@ -10,13 +10,24 @@ class Bar_menu extends Component {
         
       <Navbar className="shadow barMenu" expand="lg"  bg="light" sticky="top">
         <Container>
-          <Navbar.Brand >Mapapa</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="m-auto">
-              <Link to="/Admin">Yeti Smash<Badge className="Blink" pill bg="danger">New</Badge></Link>
-            </Nav>
-          </Navbar.Collapse>
+          <Row className="rowBar">
+            <Col sm="auto" md="auto" lg="auto">
+              <Navbar.Brand>Mapapa</Navbar.Brand>
+            </Col>
+           <Col className="m-auto" sm="auto" md="auto" lg="auto">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav ">
+              <Nav >
+                <Link to="/Admin">Yeti Smash
+                  <Badge className="Blink" pill bg="danger">New</Badge>
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+           </Col>
+
+          </Row>
+          
+          
         </Container>
       </Navbar>
        

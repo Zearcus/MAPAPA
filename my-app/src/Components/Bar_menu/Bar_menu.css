@@ -1,3 +1,9 @@
+.rowBar{
+  margin: auto;
+  text-align: center;
+}
+
+
 
 /* Title or Logo part */
 
@@ -10,8 +16,9 @@
 
 .m-auto a{
   text-decoration:none; 
-  text-align: center;
   color: black;
+  width: max-content;
+  margin-top: 5px;
 }
 
 
