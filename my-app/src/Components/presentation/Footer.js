@@ -11,19 +11,32 @@ class Footer extends Component {
             <div className="mainFooter">
                 <Container>
                     <Row>
-                        <Col className="colFooter">
-                            <h5>A propos</h5>
+
+                        {/* More part */}
+                        <Col className="colFooter" sm md lg>
+                            <h5>Navigation</h5>
+
+                            <Link to="/" className="LinkMDR">Accueil</Link>
+                            <Link to="/" className="LinkMDR">panelAdmin</Link>
+
                         </Col>
 
-                        <Col className="colFooter">
-                            <h5>Réseau Scocial</h5>
+                        <Col className="colFooter" sm md lg>
+                            <h5>Nos jeux</h5>
 
-                            
+                            <Link to="">Yeti Smash</Link>
                         </Col>
 
-                        <Col className="colFooter">
-                            <h5>Footer</h5>
+                        {/* Scocial media part */}
+
+                        <Col className="colFooter" sm md lg>
+                            <h5>Plus d'infos</h5>
+
+                            <a href="https://twitter.com"  target="_blank">twitter</a>
+                            <a href="https://twitter.com"  target="_blank">Playstore</a>
                         </Col>
+
+
                     </Row>
                 </Container>
             </div>

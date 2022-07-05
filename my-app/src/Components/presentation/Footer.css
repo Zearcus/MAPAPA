@@ -1,6 +1,6 @@
 div.mainFooter{
     height: 200px;
-    background-color: black;
+    background-color: rgba(38, 37, 37, 0.689);
 }
 
 .colFooter{
@@ -9,4 +9,27 @@ div.mainFooter{
 
 h5{
     margin-top: 15px;
+}
+
+
+/* Link part */
+
+a{
+ text-decoration:none; 
+  color: white;
+  display: flex;
+}
+
+a:hover{
+    color: white;
+}
+
+.LinkMDR{
+ text-decoration:none; 
+ display: flex;
+ color: white;
+}
+
+.LinkMDR:hover{
+    color: white;
 }

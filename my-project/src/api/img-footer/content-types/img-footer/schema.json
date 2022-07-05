@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "img_footers",
+  "info": {
+    "singularName": "img-footer",
+    "pluralName": "img-footers",
+    "displayName": "ImgFooter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LogoFooter": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
