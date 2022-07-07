@@ -17,14 +17,14 @@ class Footer extends Component {
                             <h5>Navigation</h5>
 
                             <Link to="/" className="LinkMDR">Accueil</Link>
-                            <Link to="/" className="LinkMDR">panelAdmin</Link>
+                            <Link to="/" className="LinkMDR">Contact</Link>
 
                         </Col>
 
                         <Col className="colFooter" sm md lg>
                             <h5>Nos jeux</h5>
 
-                            <Link to="">Yeti Smash</Link>
+                            <Link to="/YetiSmash">Yeti Smash</Link>
                         </Col>
 
                         {/* Scocial media part */}
@@ -35,10 +35,16 @@ class Footer extends Component {
                             <a href="https://twitter.com"  target="_blank">twitter</a>
                             <a href="https://twitter.com"  target="_blank">Playstore</a>
                         </Col>
-
-
                     </Row>
+
+                    <Container fluid className="FooterCopyright" sm md lg>
+                        &copy; {new Date().getFullYear()} Copyright: 
+                        <Link to="/"> MAPAPA.com </Link>
+                    </Container>
+
                 </Container>
+
+                
             </div>
         </div>
     )

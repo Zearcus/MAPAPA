@@ -1,5 +1,5 @@
 div.mainFooter{
-    height: 200px;
+    height: auto;
     background-color: rgba(38, 37, 37, 0.689);
 }
 
@@ -30,6 +30,13 @@ a:hover{
  color: white;
 }
 
-.LinkMDR:hover{
+/* .LinkMDR:hover{
     color: white;
+} */
+
+.FooterCopyright{
+    margin-top: 20px;
+   justify-content: center;
+    color: white;
+    display: flex;
 }

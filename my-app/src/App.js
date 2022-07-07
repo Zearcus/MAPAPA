@@ -15,7 +15,8 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state={
-      profiles:[]
+      profiles:[],
+      // FooterLogo:[]
    }
   }
 
@@ -23,6 +24,10 @@ class App extends Component {
     const response = await fetch('http://localhost:1337/api/main-pages?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
     const profiles = await response.json()
     this.setState({profiles: profiles})
+    
+    // const responseFooter = await fetch('http://localhost:1337/api/Img-footers?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
+    // const FooterLogo = await responseFooter.json()
+    // this.setState({FooterLogo: FooterLogo})
   }
 
 
