@@ -14,10 +14,11 @@ h5{
 
 /* Link part */
 
-a{
- text-decoration:none; 
-  color: white;
-  display: flex;
+a.SocialFooter{
+    width: 75px;
+    text-decoration:none; 
+    color: white;
+    display: flex;
 }
 
 a:hover{
@@ -25,9 +26,10 @@ a:hover{
 }
 
 .LinkMDR{
- text-decoration:none; 
- display: flex;
- color: white;
+    width: 50px;
+    text-decoration:none; 
+    display: flex;
+    color: white;
 }
 
 /* .LinkMDR:hover{

@@ -24,7 +24,7 @@ class Footer extends Component {
                         <Col className="colFooter" sm md lg>
                             <h5>Nos jeux</h5>
 
-                            <Link to="/YetiSmash">Yeti Smash</Link>
+                            <Link to="/YetiSmash" className="LinkMDR">Yeti Smash</Link>
                         </Col>
 
                         {/* Scocial media part */}
@@ -32,14 +32,14 @@ class Footer extends Component {
                         <Col className="colFooter" sm md lg>
                             <h5>Plus d'infos</h5>
 
-                            <a href="https://twitter.com"  target="_blank">twitter</a>
-                            <a href="https://twitter.com"  target="_blank">Playstore</a>
+                            <a href="https://twitter.com"  target="_blank" className="SocialFooter">twitter</a>
+                            <a href="https://twitter.com"  target="_blank" className="SocialFooter">Playstore</a>
                         </Col>
                     </Row>
 
                     <Container fluid className="FooterCopyright" sm md lg>
                         &copy; {new Date().getFullYear()} Copyright: 
-                        <Link to="/"> MAPAPA.com </Link>
+                        <Link to="/" className="LinkMDR"> MAPAPA.com </Link>
                     </Container>
 
                 </Container>
