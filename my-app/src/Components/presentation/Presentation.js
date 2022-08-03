@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Card, CardGroup, Row, Col, Container} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 import AnimatedText from 'react-animated-text-content';
 import {UserCard} from 'react-ui-cards';
 
@@ -17,44 +17,57 @@ function Home(props) {
 
           {/* welcome part */}
         <div className="MainPage">
-
+          <Container fluid>
           <Row>
-            <Col sm md lg>
-              <h1>
-              <AnimatedText
+            <Col sm="auto" md="auto" lg="auto"> 
+              {/* <AnimatedText
+                  className="title"
                   type='words'
                   animationType='lights'
                   interval={0.04}
-                  duration={0.8}
+                  duration={1.75}
                   animation={{
                     y: '100px',
                     ease: 'ease',
                   }}
                 >
                   Bienvenue dans Mapapa Studio
-                </AnimatedText>
-              </h1>
+                </AnimatedText> */}
+                <h1 className="title">Bienvenue dans Mapapa Studio</h1>
             </Col>
-          </Row>
+        </Row>
 
           <Row>
-            <Col>
-              <p className="presentation">
+            <Col sm="auto" md="auto" lg="auto">
                 <AnimatedText
+                  className="presentation"
                   type='words'
-                  animationType='bounce'
+                  animationType='blocks'
                   interval={0.04}
                   duration={0.8}
+                  tag="p"
+                  threshold={0.1}
+                  rootMargin="20%"  
                   animation={{
                     y: '100px',
-                    ease: 'ease',
+                    scale: 1,
+                    ease: 'ease-in-out',
                   }}
                 >
-                  Description du studio MAPAPA
+                  
+                   Description du studio MAPAPA
+
+                  In his tractibus navigerum nusquam visitur
+                  flumen sed in locis plurimis aquae suapte natura 
+                  calentes emergunt ad usus aptae multiplicium medelarum. verum has 
+                  quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in 
+                  provinciae speciem delata iuris dictione formavit.
+                  
                 </AnimatedText>
-              </p>
             </Col>
           </Row>
+        </Container>
+
 
             {/* Crew presentation */}
 

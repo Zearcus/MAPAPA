@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * img-footer service.
+ * yeti-smash service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::img-footer.img-footer');
+module.exports = createCoreService('api::yeti-smash.yeti-smash');

@@ -18,7 +18,8 @@ class Bar_menu extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav ">
               <Nav >
-                <Link to="/Admin">Yeti Smash
+                <Link to="/"> Accueil</Link>
+                <Link to="/YetiSmash">Yeti Smash
                   <Badge className="Blink" pill bg="danger">New</Badge>
                 </Link>
               </Nav>

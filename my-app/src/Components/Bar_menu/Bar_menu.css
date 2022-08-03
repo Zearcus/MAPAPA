@@ -9,6 +9,7 @@
 
 .barMenu{
   width: 100%;
+  opacity: 90%;
 }
 
 
@@ -18,7 +19,11 @@
   text-decoration:none; 
   color: black;
   width: max-content;
-  margin-top: 5px;
+  margin: 5px;
+}
+
+.m-auto a:hover{
+  color: black;
 }
 
 

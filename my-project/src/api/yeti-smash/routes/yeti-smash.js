@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * img-footer router.
+ * yeti-smash router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::img-footer.img-footer');
+module.exports = createCoreRouter('api::yeti-smash.yeti-smash');

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  img-footer controller
+ *  yeti-smash controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::img-footer.img-footer');
+module.exports = createCoreController('api::yeti-smash.yeti-smash');
