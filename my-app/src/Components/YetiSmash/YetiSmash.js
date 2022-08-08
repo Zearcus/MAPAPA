@@ -15,48 +15,76 @@ const image1 =
 
 function YetiSmash(props){
   return(
-            <div>
-            <Bar_menu/>
+      <div>
+        <Bar_menu/>
           <div className="YetiMainPage">
-                <Container fluid>
-                  <Row>
-                    <Col sm md lg>
-                      <Parallax bgImage={image1} strength={500}>
-                        <div style={{ height: 500 }}></div>
-                      </Parallax>
-                    </Col>
-                  </Row>
-                </Container>
-
-                <h2>Qu'est ce que Yeti Smash ?</h2>
-                
-                <p className="YetiDescription">In his tractibus navigerum nusquam visitur
-                  flumen sed in locis plurimis aquae suapte natura 
-                  calentes emergunt ad usus aptae multiplicium medelarum. verum has 
-                  quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in 
-                  provinciae speciem delata iuris dictione formavit.</p>
-
-                <Carousel>
+            <Container fluid>
+              <Row>
+                <Col sm md lg>
                   {props.yeti.data && props.yeti.data.map((yeti, i) => (
-                  <Carousel.Item key={i}>
-                    <img
-                      className="d-block w-100"
-                      src={yeti.attributes.Carousels.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[0].attributes.url}`}
-                      alt="First slide"
-                    />
-                    <Carousel.Caption>
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
+                    <Parallax key={i} bgImage={yeti.attributes.Parallax.data.attributes.url && `http://localhost:1337${yeti.attributes.Parallax.data.attributes.url}`} strength={500}>
+                      <div style={{ height: 500 }}></div>
+                    </Parallax>
                   ))}
-                </Carousel>
+                </Col>
+              </Row>
+            </Container>
 
-                <h3 className="download">Téléchargez Yeti Smash dès maintenant !</h3>
+            <h2>Qu'est ce que Yeti Smash ?</h2>
+            
+            <p className="YetiDescription">In his tractibus navigerum nusquam visitur
+              flumen sed in locis plurimis aquae suapte natura 
+              calentes emergunt ad usus aptae multiplicium medelarum. verum has 
+              quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in 
+              provinciae speciem delata iuris dictione formavit.</p>
 
-                <Footer/>
-              </div>
-        </div>
+            {props.yeti.data && props.yeti.data.map((yeti, i) => (
+            <Carousel key={i}>
+              
+              <Carousel.Item >
+                <img
+                  className="d-block w-100"
+                  src={yeti.attributes.Carousels.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[0].attributes.url}`}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={yeti.attributes.Carousels.data[1].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[1].attributes.url}`}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={yeti.attributes.Carousels.data[2].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[2].attributes.url}`}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+              
+              
+            </Carousel>
+            ))}
+            
+            {/* <Container fluid>
+              <Row>
+                <Col>
+                  {props.yeti.data && props.yeti.data.map((yeti, i) => (
+                    <h3 className="download">Téléchargez Yeti Smash dès maintenant !</h3>
+                    <img></img>
+                  ))}
+                </Col>
+              </Row>
+            </Container> */}
+
+            <Footer/>
+          </div>
+    </div>
 
   )
 }
