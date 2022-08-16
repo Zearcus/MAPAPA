@@ -32,8 +32,8 @@ class Footer extends Component {
                         <Col className="colFooter" sm="auto" md="auto" lg="auto">
                             <h5>Plus d'infos</h5>
 
-                            <a href="https://twitter.com"  target="_blank" className="SocialFooter">twitter</a>
-                            <a href="https://twitter.com"  target="_blank" className="SocialFooter">Playstore</a>
+                        <a href="https://twitter.com"  target="_blank" className="SocialFooter">twitter</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.mapapastudio.yetismash&gl=FR"  target="_blank" className="SocialFooter">Playstore</a>
                         </Col>
                     </Row>
 

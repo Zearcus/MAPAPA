@@ -19,9 +19,8 @@ function Home(props) {
         <div className="MainPage">
           <Container fluid>
           <Row>
-            <Col sm="auto" md="auto" lg="auto"> 
-              {/* <AnimatedText
-                  className="title"
+            <Col sm="auto" md="auto" lg="auto" className="title"> 
+              <AnimatedText
                   type='words'
                   animationType='lights'
                   interval={0.04}
@@ -32,15 +31,14 @@ function Home(props) {
                   }}
                 >
                   Bienvenue dans Mapapa Studio
-                </AnimatedText> */}
-                <h1 className="title">Bienvenue dans Mapapa Studio</h1>
+                </AnimatedText>
+                {/* <h1 >Bienvenue dans Mapapa Studio</h1> */}
             </Col>
         </Row>
 
-          <Row>
+          <Row className="presentation">
             <Col sm="auto" md="auto" lg="auto">
                 <AnimatedText
-                  className="presentation"
                   type='words'
                   animationType='blocks'
                   interval={0.04}
@@ -71,7 +69,7 @@ function Home(props) {
 
             {/* Crew presentation */}
 
-          <h2>Présentation de l'équipe</h2>
+          <h2 className="CrewPresentation">Présentation de l'équipe</h2>
           <Container fluid>
             
             <Row className="Profile">

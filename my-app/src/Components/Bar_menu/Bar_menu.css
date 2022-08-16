@@ -1,15 +1,15 @@
-.rowBar{
-  margin: auto;
-  text-align: center;
-}
 
-
-
-/* Title or Logo part */
 
 .barMenu{
   width: 100%;
   opacity: 90%;
+}
+
+/* Title or Logo part */
+
+.rowBar{
+  margin: auto;
+  text-align: center;
 }
 
 

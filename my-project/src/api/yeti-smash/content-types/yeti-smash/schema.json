@@ -4,7 +4,8 @@
   "info": {
     "singularName": "yeti-smash",
     "pluralName": "yeti-smashes",
-    "displayName": "YetiSmash"
+    "displayName": "YetiSmash",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,34 +13,37 @@
   "pluginOptions": {},
   "attributes": {
     "Parallax": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Carousels": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "DownloadButton": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -6,20 +6,24 @@ div.MainPage{
 .title{
     color: white;
     font-size: 40px;
-    justify-content: center;
+    display: block;
+    margin: 300px auto 150px auto;
 }
 
 
 .presentation{
-    margin: auto;
+    /* margin: auto; */
+    display: block;
+    margin: 150px auto 30px auto;
     color: pink;
     font-size: 20px;
-    overflow-wrap: break-word;
+    line-break: normal;
 }
 
-h2{
+h2.CrewPresentation{
     color: white;
     text-align: center;
+    margin: 200px 0 90px 0;
 }
 
 .Profile{
