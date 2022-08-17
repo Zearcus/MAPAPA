@@ -4,7 +4,7 @@ import AnimatedText from 'react-animated-text-content';
 import {UserCard} from 'react-ui-cards';
 
 import Bar_menu from "../Bar_menu/Bar_menu"
-import Footer from "./Footer"
+import Footer from "../Footer/Footer"
 
 import './presentation.css'
 

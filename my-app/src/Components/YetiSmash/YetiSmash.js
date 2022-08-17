@@ -3,7 +3,7 @@ import {Row, Col, Container, Carousel, Button} from 'react-bootstrap';
 import { Parallax} from "react-parallax"
 
 import Bar_menu from "../Bar_menu/Bar_menu"
-import Footer from "../presentation/Footer"
+import Footer from "../Footer/Footer"
 
 import './YetiSmash.css'
 
