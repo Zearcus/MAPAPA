@@ -17,18 +17,9 @@ div.ParallaxFront1{
 }
 
 h2{
-  margin: 150px 0 150px 0;
+  margin: 100px;
   color: white;
   text-align: center;
-}
-
-p.YetiDescription{
-  margin: 0;
-  padding: 50px ;
-  text-align: center;
-  color: white;
-  font-size: 25px; 
-
 }
 
 /* carousel part */
@@ -39,10 +30,19 @@ div.ParallaxFront2{
   height: auto;
 }
 
+p.YetiDescription{
+  height: 70%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 25px; 
+
+}
+
 .carousel{
   width: 50%;
   height: 330px;
-  margin: 100px auto 0 auto;
+  margin: 50px auto auto auto;
 }
 
 img.ImgCar{

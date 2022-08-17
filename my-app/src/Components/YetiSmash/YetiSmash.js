@@ -18,7 +18,7 @@ function YetiSmash(props){
 
             {/* first page */}
 
-            <Container fluid c>
+            <Container fluid >
               <Row>
                 {props.yeti.data && props.yeti.data.map((yeti, i) => (
                 <Col key={i} className="NoPadding" sm md lg>
@@ -26,9 +26,6 @@ function YetiSmash(props){
                     <Parallax strength={500} bgImage={yeti.attributes.Parallax.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Parallax.data[0].attributes.url}`}>
                       <div className="ParallaxFront1">
                         <h2>Qu'est ce que Yeti Smash ?</h2>
-            
-
-
                       </div>
                     </Parallax>
                   
@@ -48,11 +45,12 @@ function YetiSmash(props){
                        
                       <div className="ParallaxFront2">
 
-                                                <p className="YetiDescription">Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/>
+                        <p className="YetiDescription">Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/>
                           Accédez à de nouveaux niveaux, de nouvelles énigmes avec des compétences à améliorer. Apprenez, améliorez et surtout : amusez-vous !<br/>
                           Chaque niveau apporte sa propre stratégie et ses propres compétences,
-                           soyez chanceux ou non, améliorez vos compétences pour vous faciliter la vie,
-                            et faites vos meilleurs coups !</p>
+                          soyez chanceux ou non, améliorez vos compétences pour vous faciliter la vie,
+                          et faites vos meilleurs coups !
+                        </p>
 
                         <Carousel className="carousel">
                           

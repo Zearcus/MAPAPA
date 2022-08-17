@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+img.Logo{
+  border-radius: 25%;
+  width: 50px;
+  height: auto;
+}
+
 
 /* Nav Game part */
 
