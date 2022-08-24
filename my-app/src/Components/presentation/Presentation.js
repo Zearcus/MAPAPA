@@ -1,42 +1,47 @@
-import React, { Component } from "react";
+import React from "react";
 import { Row, Col, Container} from 'react-bootstrap';
 import AnimatedText from 'react-animated-text-content';
 import {UserCard} from 'react-ui-cards';
 
-import Bar_menu from "../Bar_menu/Bar_menu"
-import Footer from "../Footer/Footer"
-
 import './presentation.css'
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+    if (elementTop > windowHeight - elementVisible) {
+      reveals[i].classList.remove("active");
+    }
+  }
+
+}
+window.addEventListener("scroll", reveal);
+
 function Home(props) {
-  
+
     return (
       <div>
-          
-        <Bar_menu/>
-
           {/* welcome part */}
         <div className="MainPage">
           <Container fluid>
           <Row>
             <Col sm="auto" md="auto" lg="auto" className="title"> 
-              <AnimatedText
-                  type='words'
-                  animationType='lights'
-                  interval={0.04}
-                  duration={1.75}
-                  animation={{
-                    y: '100px',
-                    ease: 'ease',
-                  }}
-                >
-                  Bienvenue dans Mapapa Studio
-                </AnimatedText>
-                {/* <h1 >Bienvenue dans Mapapa Studio</h1> */}
+                <h1  className="text1">
+                  Mapapa Studio
+                </h1>
             </Col>
         </Row>
 
-          <Row className="presentation">
+          <Row className="presentation reveal">
             <Col sm="auto" md="auto" lg="auto">
                 <AnimatedText
                   type='words'
@@ -69,15 +74,15 @@ function Home(props) {
 
             {/* Crew presentation */}
 
-          <h2 className="CrewPresentation">Présentation de l'équipe</h2>
-          <Container fluid>
-            
+          
+          <Container fluid className="reveal">
+            <h2 className="CrewPresentation">Présentation de l'équipe</h2>
             <Row className="Profile">
               {props.profiles.data && props.profiles.data.map((profiles, i) => (
-              <Col sm="auto" md="auto" lg="auto" >
+              <Col sm="auto" md="auto" lg="auto" key={i} >
 
                 {/* put className="Profile" in Col if you've a problem */}
-                  <div key={i}>
+                  <div>
 
                       <UserCard
                           float
@@ -103,7 +108,6 @@ function Home(props) {
             </Row>
           </Container>
 
-          <Footer/>
 
         </div>
       </div> 

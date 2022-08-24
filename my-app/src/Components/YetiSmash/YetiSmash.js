@@ -1,24 +1,17 @@
-import React, { Component } from "react";
-import {Row, Col, Container, Carousel, Button} from 'react-bootstrap';
+import React from "react";
+import {Row, Col, Container, Carousel} from 'react-bootstrap';
 import { Parallax} from "react-parallax"
 
-import Bar_menu from "../Bar_menu/Bar_menu"
-import Footer from "../Footer/Footer"
-
 import './YetiSmash.css'
-
-
-
 
 function YetiSmash(props){
   return(
       <div>
-        <Bar_menu/>
           <div className="YetiMainPage">
 
             {/* first page */}
 
-            <Container fluid >
+            {/* <Container fluid >
               <Row>
                 {props.yeti.data && props.yeti.data.map((yeti, i) => (
                 <Col key={i} className="NoPadding" sm md lg>
@@ -32,7 +25,7 @@ function YetiSmash(props){
                 </Col>
                 ))}
               </Row>
-            </Container>
+            </Container> */}
 
                   {/* Carousel part */}
 
@@ -41,8 +34,10 @@ function YetiSmash(props){
                   <Row>
                     {props.yeti.data && props.yeti.data.map((yeti, i) => (
                     <Col key={i} className="NoPadding" sm md lg>
-                    <Parallax strength={500} bgImage={yeti.attributes.Parallax.data[1].attributes.url && `http://localhost:1337${yeti.attributes.Parallax.data[1].attributes.url}`}>
-                       
+                    <Parallax strength={200} bgImage={yeti.attributes.Parallax.data[1].attributes.url && `http://localhost:1337${yeti.attributes.Parallax.data[1].attributes.url}`}>
+                        
+                      <h2>Qu'est ce que Yeti Smash ?</h2>
+                      
                       <div className="ParallaxFront2">
 
                         <p className="YetiDescription">Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/>
@@ -52,7 +47,7 @@ function YetiSmash(props){
                           et faites vos meilleurs coups !
                         </p>
 
-                        <Carousel className="carousel">
+                        <Carousel className="carousel" variant="dark">
                           
                           <Carousel.Item className="Carousel">
                             <img
@@ -115,7 +110,6 @@ function YetiSmash(props){
               </Row>
             </Container> */}
 
-            <Footer/>
           </div>
     </div>
 

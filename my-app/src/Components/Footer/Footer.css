@@ -23,6 +23,12 @@ a.SocialFooter{
     display: flex;
 }
 
+img.LogoFooter{
+  border-radius: 25%;
+  width: 25px;
+  height: auto;
+}
+
 a:hover{
     color: white;
 }

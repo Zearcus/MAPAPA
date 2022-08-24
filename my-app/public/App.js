@@ -7,21 +7,18 @@ import {
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
 import React, { Component} from 'react';
 import Home from './Components/presentation/Presentation';
 import Admin_panel from './Components/Admin_panel/Admin_panel'
 import YetiSmash from './Components/YetiSmash/YetiSmash'
-import Bar_menu from './Components/Bar_menu/Bar_menu'
-import Footer from './Components/Footer/Footer'
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state={
       profiles:[],
-      yeti:[],
-      logos:[]
+      yeti:[]
+      // FooterLogo:[]
    }
   }
 
@@ -33,11 +30,10 @@ class App extends Component {
     const responseYeti = await fetch('http://localhost:1337/api/yeti-smashes?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
     const yeti = await responseYeti.json()
     this.setState({yeti: yeti})
-
-    const responseLogo = await fetch('http://localhost:1337/api/img-logos?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
-    const logos = await responseLogo.json()
-    this.setState({logos: logos})
     
+    // const responseFooter = await fetch('http://localhost:1337/api/Img-footers?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
+    // const FooterLogo = await responseFooter.json()
+    // this.setState({FooterLogo: FooterLogo})
   }
 
 
@@ -45,9 +41,9 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<> <Bar_menu logos={this.state.logos} /> <Home profiles={this.state.profiles}/> <Footer logos={this.state.logos}/> </> } />
+          <Route exact path='/' element={<Home profiles={this.state.profiles} />} />
           <Route exact path='/123456789/Admin' element={<Admin_panel />} />
-          <Route exact path='/YetiSmash' element={<> <Bar_menu logos={this.state.logos}/> <YetiSmash yeti={this.state.yeti}/> <Footer logos={this.state.logos}/> </>} />
+          <Route exact path='/YetiSmash' element={<YetiSmash yeti={this.state.yeti}/>} />
         </Routes>
       </Router>
     )
@@ -58,3 +54,6 @@ class App extends Component {
 
 
 export default App;
+
+
+// /api/main-pages/:id

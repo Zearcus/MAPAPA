@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Component } from "react";
-import {Container, Row, Col, Navbar, Nav, Badge} from 'react-bootstrap';
+import React from "react";
+import {Container, Row, Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
 import './Footer.css'
-class Footer extends Component {
-  render() {
+
+function Footer (props) {
     return (
         <div>
             <div className="mainFooter">
@@ -28,13 +27,21 @@ class Footer extends Component {
                         </Col>
 
                         {/* Scocial media part */}
-
-                        <Col className="colFooter" sm="auto" md="auto" lg="auto">
+                            {/* ici */}
+                        {props.logos.data && props.logos.data.map((logos, i) => (
+                        <Col className="colFooter" sm="auto" md="auto" lg="auto" key={i}>
                             <h5>Plus d'infos</h5>
 
-                        <a href="https://twitter.com"  target="_blank" className="SocialFooter">twitter</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.mapapastudio.yetismash&gl=FR"  target="_blank" className="SocialFooter">Playstore</a>
+                            <a href="https://twitter.com"  target="_blank" className="SocialFooter">
+                                <img className="LogoFooter" src={logos.attributes.logo.data[2].attributes.url && `http://localhost:1337${logos.attributes.logo.data[2].attributes.url}`}/>
+                                Twitter
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.mapapastudio.yetismash&gl=FR"  target="_blank" className="SocialFooter">
+                                <img className="LogoFooter" src={logos.attributes.logo.data[0].attributes.url && `http://localhost:1337${logos.attributes.logo.data[0].attributes.url}`}/>
+                                Playstore
+                            </a>
                         </Col>
+                        ))}
                     </Row>
 
                     <Container fluid className="FooterCopyright" sm="auto" md="auto" lg="auto">
@@ -43,14 +50,9 @@ class Footer extends Component {
                     </Container>
 
                 </Container>
-
-                
             </div>
         </div>
     )
-  }
 }
-
-
 
 export default Footer;

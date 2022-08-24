@@ -3,13 +3,50 @@ div.MainPage{
     height: auto;
 }
 
-.title{
-    color: white;
-    font-size: 40px;
-    display: block;
-    margin: 300px auto 150px auto;
+/* reveal function part */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* title part */
+
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  display: block;
+  margin: 300px auto 150px auto;
+  position: relative;
+  animation: text 4s 1;
+  animation-delay: 0.8s;
+  animation-name: text;
+  animation-duration: 4s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes text {
+  0% {
+    color: white;
+  }
+  30% {
+    letter-spacing: 25px;
+  }
+  100% {
+    letter-spacing: 8px;
+  }
+}
+
+/* presentation part */
 
 .presentation{
     /* margin: auto; */
@@ -20,6 +57,8 @@ div.MainPage{
     line-break: normal;
 }
 
+/* crew part */
+
 h2.CrewPresentation{
     color: white;
     text-align: center;
@@ -27,7 +66,8 @@ h2.CrewPresentation{
 }
 
 .Profile{
-justify-content: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
 }
 
 /* .ProfileImage{
