@@ -13,23 +13,25 @@ function Footer (props) {
 
                         {/* More part */}
                         <Col className="colFooter" sm="auto" md="auto" lg="auto">
+                            
                             <h5>Navigation</h5>
 
-                            <Link to="/" className="LinkMDR">Accueil</Link>
-                            <Link to="/" className="LinkMDR">Contact</Link>
+                            <Link to="/" className="LinkNavigation">Accueil</Link>
 
                         </Col>
 
                         <Col className="colFooter" sm="auto" md="auto" lg="auto">
+                            
                             <h5>Nos jeux</h5>
 
-                            <Link to="/YetiSmash" className="LinkMDR">Yeti Smash</Link>
+                            <Link to="/YetiSmash" className="LinkGame">Yeti Smash</Link>
                         </Col>
 
                         {/* Scocial media part */}
                             {/* ici */}
                         {props.logos.data && props.logos.data.map((logos, i) => (
                         <Col className="colFooter" sm="auto" md="auto" lg="auto" key={i}>
+                            
                             <h5>Plus d'infos</h5>
 
                             <a href="https://twitter.com"  target="_blank" className="SocialFooter">
@@ -46,7 +48,7 @@ function Footer (props) {
 
                     <Container fluid className="FooterCopyright" sm="auto" md="auto" lg="auto">
                         &copy; {new Date().getFullYear()} Copyright: 
-                        <Link to="/" className="LinkMDR"> MAPAPA.com </Link>
+                        <Link to="/" className="LinkMapapa"> MAPAPA.com </Link>
                     </Container>
 
                 </Container>

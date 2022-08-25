@@ -19,7 +19,11 @@ function Bar_menu (props){
             <Navbar.Brand>
               Mapapa
               <Link to="/">
-                  <img className="Logo"  src={logos.attributes.logo.data[1].attributes.url && `http://localhost:1337${logos.attributes.logo.data[1].attributes.url}`}/>
+                  <img className="Logo"  
+                  src={logos.attributes.logo.data[1].attributes.url && `http://localhost:1337${logos.attributes.logo.data[1].attributes.url}`}
+                  
+                  />
+                  
               </Link>
             </Navbar.Brand>
           </Col>

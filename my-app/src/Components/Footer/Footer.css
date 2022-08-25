@@ -6,7 +6,7 @@ div.mainFooter{
 
 .colFooter{
     color: white;
-    margin: auto;
+    margin: 10px auto 10px auto;
 }
 
 h5{
@@ -16,8 +16,24 @@ h5{
 
 /* Link part */
 
+.LinkNavigation{
+    /* justify-content: center; */
+    text-decoration:none; 
+    display: flex;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 20px;
+}
+
+.LinkGame{
+    text-decoration:none; 
+    display: flex;
+    color: white;
+    margin: auto;
+}
+
 a.SocialFooter{
-    width: 75px;
+    /* width: 75px; */
     text-decoration:none; 
     color: white;
     display: flex;
@@ -25,6 +41,7 @@ a.SocialFooter{
 
 img.LogoFooter{
   border-radius: 25%;
+  margin: 0 10px 5px 0;
   width: 25px;
   height: auto;
 }
@@ -33,21 +50,19 @@ a:hover{
     color: white;
 }
 
-.LinkMDR{
-    width: 50px;
-    text-decoration:none; 
-    display: flex;
-    color: white;
-}
-
 /* .LinkMDR:hover{
     color: white;
 } */
 
 .FooterCopyright{
-    margin: auto;
-    margin-top: 20px;
-   justify-content: center;
+    margin: 20px auto 0 auto;
+    justify-content: center;
     color: white;
     display: flex;
+}
+
+.LinkMapapa{
+    text-decoration:none; 
+    display: flex;
+    color: white;
 }

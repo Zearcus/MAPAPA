@@ -43,30 +43,16 @@ function Home(props) {
 
           <Row className="presentation reveal">
             <Col sm="auto" md="auto" lg="auto">
-                <AnimatedText
-                  type='words'
-                  animationType='blocks'
-                  interval={0.04}
-                  duration={0.8}
-                  tag="p"
-                  threshold={0.1}
-                  rootMargin="20%"  
-                  animation={{
-                    y: '100px',
-                    scale: 1,
-                    ease: 'ease-in-out',
-                  }}
-                >
-                  
-                   Description du studio MAPAPA
+                  <p>
+                    Description du studio MAPAPA
 
-                  In his tractibus navigerum nusquam visitur
-                  flumen sed in locis plurimis aquae suapte natura 
-                  calentes emergunt ad usus aptae multiplicium medelarum. verum has 
-                  quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in 
-                  provinciae speciem delata iuris dictione formavit.
-                  
-                </AnimatedText>
+                    In his tractibus navigerum nusquam visitur <br/>
+                    flumen sed in locis plurimis aquae suapte natura <br/>
+                    calentes emergunt ad usus aptae multiplicium medelarum. verum has <br/>
+                    quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in <br/>
+                    provinciae speciem delata iuris dictione formavit.
+
+                  </p>
             </Col>
           </Row>
         </Container>
@@ -76,7 +62,9 @@ function Home(props) {
 
           
           <Container fluid className="reveal">
+            
             <h2 className="CrewPresentation">Présentation de l'équipe</h2>
+            
             <Row className="Profile">
               {props.profiles.data && props.profiles.data.map((profiles, i) => (
               <Col sm="auto" md="auto" lg="auto" key={i} >
@@ -91,17 +79,6 @@ function Home(props) {
                           name={profiles.attributes.Name}
                           positionName={profiles.attributes.Description}
                       />
-
-                      {/* <Card className="Profile">
-                      
-                      <Card.Img variant="top" className="ProfileImage" src={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}/>
-                      <Card.Body>
-                        <Card.Title>{profiles.attributes.Name}</Card.Title>
-                          <Card.Text>
-                            {profiles.attributes.Description}
-                          </Card.Text>
-                      </Card.Body>
-                  </Card> */}
                   </div>
               </Col> 
               ))}
