@@ -28,69 +28,69 @@ window.addEventListener("scroll", reveal);
 
 function Home(props) {
 
-    return (
-      <div>
-          {/* welcome part */}
-        <div className="MainPage">
-          <Container fluid>
+  return (
+    <div>
+        {/* welcome part */}
+      <div className="MainPage">
+        <Container fluid>
           <Row>
             <Col sm="auto" md="auto" lg="auto" className="title"> 
-                <h1  className="text1">
-                  Mapapa Studio
-                </h1>
+              <h1>
+                Mapapa Studio
+              </h1>
             </Col>
-        </Row>
+          </Row>
 
           <Row className="presentation reveal">
             <Col sm="auto" md="auto" lg="auto">
-                  <p>
-                    Description du studio MAPAPA
+              <p>
+                Description du studio MAPAPA
 
-                    In his tractibus navigerum nusquam visitur <br/>
-                    flumen sed in locis plurimis aquae suapte natura <br/>
-                    calentes emergunt ad usus aptae multiplicium medelarum. verum has <br/>
-                    quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in <br/>
-                    provinciae speciem delata iuris dictione formavit.
+                In his tractibus navigerum nusquam visitur <br/>
+                flumen sed in locis plurimis aquae suapte natura <br/>
+                calentes emergunt ad usus aptae multiplicium medelarum. verum has <br/>
+                quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in <br/>
+                provinciae speciem delata iuris dictione formavit.
 
-                  </p>
+              </p>
             </Col>
+          </Row>
+      </Container>
+
+
+          {/* Crew presentation */}
+
+        
+        <Container fluid className="reveal">
+          
+          <h2 className="CrewPresentation">Présentation de l'équipe</h2>
+          
+          <Row className="Profile">
+            {props.profiles.data && props.profiles.data.map((profiles, i) => (
+            <Col sm="auto" md="auto" lg="auto" key={i} >
+
+              {/* put className="Profile" in Col if you've a problem */}
+                <div>
+
+                    <UserCard
+                        float
+                        header={profiles.attributes.Cover.data.attributes.url && `http://localhost:1337${profiles.attributes.Cover.data.attributes.url}`}
+                        avatar={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}
+                        name={profiles.attributes.Name}
+                        positionName={profiles.attributes.Description}
+                    />
+                </div>
+            </Col> 
+            ))}
           </Row>
         </Container>
 
 
-            {/* Crew presentation */}
+      </div>
+    </div> 
+    
 
-          
-          <Container fluid className="reveal">
-            
-            <h2 className="CrewPresentation">Présentation de l'équipe</h2>
-            
-            <Row className="Profile">
-              {props.profiles.data && props.profiles.data.map((profiles, i) => (
-              <Col sm="auto" md="auto" lg="auto" key={i} >
-
-                {/* put className="Profile" in Col if you've a problem */}
-                  <div>
-
-                      <UserCard
-                          float
-                          header={profiles.attributes.Cover.data.attributes.url && `http://localhost:1337${profiles.attributes.Cover.data.attributes.url}`}
-                          avatar={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}
-                          name={profiles.attributes.Name}
-                          positionName={profiles.attributes.Description}
-                      />
-                  </div>
-              </Col> 
-              ))}
-            </Row>
-          </Container>
-
-
-        </div>
-      </div> 
-      
-
-    )
+  )
   
 }
 

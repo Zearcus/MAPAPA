@@ -35,11 +35,11 @@ function Footer (props) {
                             <h5>Plus d'infos</h5>
 
                             <a href="https://twitter.com"  target="_blank" className="SocialFooter">
-                                <img className="LogoFooter" src={logos.attributes.logo.data[2].attributes.url && `http://localhost:1337${logos.attributes.logo.data[2].attributes.url}`}/>
+                                <img className="LogoFooter" src={logos.attributes.logo.data[2].attributes.url && `http://localhost:1337${logos.attributes.logo.data[2].attributes.url}`} alt="Mapapa Twitter logo"/>
                                 Twitter
                             </a>
                             <a href="https://play.google.com/store/apps/details?id=com.mapapastudio.yetismash&gl=FR"  target="_blank" className="SocialFooter">
-                                <img className="LogoFooter" src={logos.attributes.logo.data[0].attributes.url && `http://localhost:1337${logos.attributes.logo.data[0].attributes.url}`}/>
+                                <img className="LogoFooter" src={logos.attributes.logo.data[0].attributes.url && `http://localhost:1337${logos.attributes.logo.data[0].attributes.url}`} alt="Mapapa Playstore logo"/>
                                 Playstore
                             </a>
                         </Col>

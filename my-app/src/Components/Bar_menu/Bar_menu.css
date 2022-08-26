@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 .barMenu{
   width: 100%;
   opacity: 90%;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 /* Title or Logo part */
@@ -36,8 +37,8 @@ img.Logo{
 /* Blinking badge New */
 
 .Blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 4s steps(5, start) infinite;
+    animation: blink-animation 1s steps(4, start) infinite;
+    -webkit-animation: blink-animation 2s steps(4, start) infinite;
   }
   @keyframes blink-animation {
     to {

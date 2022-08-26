@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 /* body */
 div.YetiMainPage{
   width: auto;
   height: auto;
   padding: 0;
+  font-family: 'Silkscreen', cursive;
+}
+
+/* reveal function part */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* first part  */
@@ -11,38 +28,38 @@ div.YetiMainPage{
   padding: 0;
 }
 
-div.ParallaxFront1{
-  width: 100%;
-  height: auto;
-}
-
-h2{
-  margin: 100px;
+h2.titleYetiSmash{
+  margin: 0 auto 0 auto;
+  padding: 350px 0 350px 0;
   color: black;
   text-align: center;
 }
 
 /* carousel part */
 
-div.ParallaxFront2{
+div.ParallaxFront{
   display: flex;
   width: 100%;
   height: auto;
+  padding-bottom: 100px;
 }
 
 p.YetiDescription{
-  height: 70%;
-  margin: auto;
+  height: 50%;
+  width: 50%;
+  margin: auto 40px auto 80px;
+  padding: 10px;
   text-align: center;
   color: black;
-  font-size: 25px; 
-
+  font-size: 20px; 
+  background-color: white;
+  border-radius: 10px;
 }
 
 .carousel{
   width: 50%;
   height: 330px;
-  margin: 50px auto auto auto;
+  margin: 50px 50px auto 50px;
 }
 
 img.ImgCar{
@@ -51,52 +68,15 @@ img.ImgCar{
   margin-right: auto;
 }
 
-/* download part  */
-
-.FlexDownload{
+.DownloadButton{
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto 50px auto;
+  color: white;
+  background-color: rgba(233, 12, 12, 0.756);
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.download{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.DownloadButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-img.DownloadButton{
-  height: 50px;
-
-}
-
-
-/* CSS */
-/* .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
-
-.button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-} */

@@ -20,8 +20,8 @@ function Bar_menu (props){
               Mapapa
               <Link to="/">
                   <img className="Logo"  
-                  src={logos.attributes.logo.data[1].attributes.url && `http://localhost:1337${logos.attributes.logo.data[1].attributes.url}`}
-                  
+                    src={logos.attributes.logo.data[1].attributes.url && `http://localhost:1337${logos.attributes.logo.data[1].attributes.url}`}
+                    alt="Mapapa logo"
                   />
                   
               </Link>
