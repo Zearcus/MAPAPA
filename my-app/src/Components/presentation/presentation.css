@@ -22,14 +22,15 @@ div.MainPage{
 
 /* title part */
 
-.title {
+h1.title {
   color: white;
   font-size: 40px;
-  font-weight: 700;
   letter-spacing: 8px;
   display: block;
   text-align: center;
-  margin: 300px auto 250px auto;
+  padding-top: 300px;
+  padding-bottom: 250px;
+  margin: 0 auto 0 auto;
   position: relative;
   animation: text 4s 1;
   animation-delay: 0.8s;
@@ -86,7 +87,15 @@ h2.CrewPresentation{
 .presentation{
   /* margin: auto; */
   padding: 20px;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+h2.CrewPresentation{
+  color: white;
+  text-align: center;
+  margin-top: 200px;
 }
 }

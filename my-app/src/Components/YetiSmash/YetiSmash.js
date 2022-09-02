@@ -31,7 +31,7 @@ function YetiSmash(props){
 
             {/* first page */}
 
-            <h2 className="titleYetiSmash">Qu'est ce que Yeti Smash ?</h2>
+            <h2 className="titleYetiSmash">Yeti Smash</h2>
           
             <p className="YetiDescription reveal">
               Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/><br/>

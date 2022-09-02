@@ -31,30 +31,19 @@ function Home(props) {
     <div>
         {/* welcome part */}
       <div className="MainPage">
-        <Container fluid>
-          <Row>
-            <Col className="title"> 
-              <h1>
+
+              <h1 className="title">
                 Mapapa Studio
               </h1>
-            </Col>
-          </Row>
 
-          <Row className="presentation reveal">
-            <Col>
-              <p>
-                Description du studio MAPAPA
 
-                In his tractibus navigerum nusquam visitur <br/>
-                flumen sed in locis plurimis aquae suapte natura <br/>
-                calentes emergunt ad usus aptae multiplicium medelarum. verum has <br/>
-                quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in <br/>
-                provinciae speciem delata iuris dictione formavit.
+
+              <p className="presentation reveal">
+                Mapapa studio à été fondé par trois étudiants lors d'une GameJam organisé par Google en 2022.<br/>
+                Ces étudiants font partis du Gaming Campus à lyon et ont pour but de créer des jeux fun à jouer et drôles<br/>
 
               </p>
-            </Col>
-          </Row>
-      </Container>
+
 
 
           {/* Crew presentation */}
