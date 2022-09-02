@@ -23,14 +23,13 @@ function Bar_menu (props){
                     src={logos.attributes.logo.data[1].attributes.url && `http://localhost:1337${logos.attributes.logo.data[1].attributes.url}`}
                     alt="Mapapa logo"
                   />
-                  
               </Link>
             </Navbar.Brand>
           </Col>
           ))}
 
           <Col className="m-auto NoPadding" sm="auto" md="auto" lg="auto">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav >
               <Link to="/YetiSmash">

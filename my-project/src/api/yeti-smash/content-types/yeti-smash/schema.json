@@ -14,7 +14,7 @@
   "attributes": {
     "Parallax": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -26,6 +26,17 @@
     "Carousels": {
       "type": "media",
       "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ParallaxSecond": {
+      "type": "media",
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",

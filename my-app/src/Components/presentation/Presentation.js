@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Container} from 'react-bootstrap';
-import AnimatedText from 'react-animated-text-content';
 import {UserCard} from 'react-ui-cards';
 
 import './presentation.css'
@@ -34,7 +33,7 @@ function Home(props) {
       <div className="MainPage">
         <Container fluid>
           <Row>
-            <Col sm="auto" md="auto" lg="auto" className="title"> 
+            <Col className="title"> 
               <h1>
                 Mapapa Studio
               </h1>
@@ -42,7 +41,7 @@ function Home(props) {
           </Row>
 
           <Row className="presentation reveal">
-            <Col sm="auto" md="auto" lg="auto">
+            <Col>
               <p>
                 Description du studio MAPAPA
 

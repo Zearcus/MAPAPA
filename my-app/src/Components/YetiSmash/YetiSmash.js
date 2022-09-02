@@ -1,6 +1,5 @@
 import React from "react";
 import {Row, Col, Container, Carousel} from 'react-bootstrap';
-import { Parallax} from "react-parallax"
 
 import './YetiSmash.css'
 
@@ -32,67 +31,59 @@ function YetiSmash(props){
 
             {/* first page */}
 
-            {/* Carousel part */}
-
+            <h2 className="titleYetiSmash">Qu'est ce que Yeti Smash ?</h2>
+          
+            <p className="YetiDescription reveal">
+              Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/><br/>
+              Accédez à de nouveaux niveaux, de nouvelles énigmes avec des compétences à améliorer. Apprenez, améliorez et surtout : amusez-vous !<br/><br/>
+              Chaque niveau apporte sa propre stratégie et ses propres compétences,
+              soyez chanceux ou non, améliorez vos compétences pour vous faciliter la vie,
+              et faites vos meilleurs coups !
+            </p>
 
               <Container fluid>
                   <Row>
                     {props.yeti.data && props.yeti.data.map((yeti, i) => (
-                    <Col key={i} className="NoPadding" sm="auto" md="auto" lg="auto">
-                    <Parallax strength={50} bgImage={yeti.attributes.Parallax.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Parallax.data[0].attributes.url}`}>
+                    <Col key={i} className="NoPadding reveal" >
                         
-                      <h2 className="titleYetiSmash">Qu'est ce que Yeti Smash ?</h2>
-                      
-                      <div className="ParallaxFront reveal">
+                      <Carousel className="carousel " variant="dark">
+                        
+                        <Carousel.Item>
+                          <img
+                            className="d-block ImgCar"
+                            src={yeti.attributes.Carousels.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[0].attributes.url}`}
+                            alt="Mapapa Carousel images"
+                          />
+                        </Carousel.Item >
 
-                        <p className="YetiDescription ">Avec l'aide de Yeti Le Bro, vous allez pouvoir voler loin, très loin, très loin. <br/><br/>
-                          Accédez à de nouveaux niveaux, de nouvelles énigmes avec des compétences à améliorer. Apprenez, améliorez et surtout : amusez-vous !<br/><br/>
-                          Chaque niveau apporte sa propre stratégie et ses propres compétences,
-                          soyez chanceux ou non, améliorez vos compétences pour vous faciliter la vie,
-                          et faites vos meilleurs coups !
-                        </p>
-
-                        <Carousel className="carousel" variant="dark">
-                          
                           <Carousel.Item>
                             <img
                               className="d-block ImgCar"
-                              src={yeti.attributes.Carousels.data[0].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[0].attributes.url}`}
+                              src={yeti.attributes.Carousels.data[1].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[1].attributes.url}`}
                               alt="Mapapa Carousel images"
                             />
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                          </Carousel.Item >
+                          </Carousel.Item>
 
-                            <Carousel.Item>
-                              <img
-                                className="d-block ImgCar"
-                                src={yeti.attributes.Carousels.data[1].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[1].attributes.url}`}
-                                alt="Mapapa Carousel images"
-                              />
-                            </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="d-block ImgCar"
+                              src={yeti.attributes.Carousels.data[2].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[2].attributes.url}`}
+                              alt="Mapapa Carousel images"
+                            />
+                          </Carousel.Item>
 
-                            <Carousel.Item>
-                              <img
-                                className="d-block ImgCar"
-                                src={yeti.attributes.Carousels.data[2].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[2].attributes.url}`}
-                                alt="Mapapa Carousel images"
-                              />
-                            </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="d-block ImgCar"
+                              src={yeti.attributes.Carousels.data[3].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[3].attributes.url}`}
+                              alt="Mapapa Carousel images"
+                            />
+                          </Carousel.Item>
+                      </Carousel>
 
-                            <Carousel.Item>
-                              <img
-                                className="d-block ImgCar"
-                                src={yeti.attributes.Carousels.data[3].attributes.url && `http://localhost:1337${yeti.attributes.Carousels.data[3].attributes.url}`}
-                                alt="Mapapa Carousel images"
-                              />
-                            </Carousel.Item>
-                        </Carousel>
-
-                          
-                      </div>
-                      <button className="DownloadButton" target="_blank">Télécharge le jeu gratuitement !</button>
-                    </Parallax>
+                      <button className="DownloadButton">
+                        <a href="https://play.google.com/store/apps/details?id=com.mapapastudio.yetismash&gl=FR" rel="noreferrer" target="_blank">Télécharge le jeu gratuitement !</a>
+                      </button>
                   </Col>
                   ))}
                 </Row>

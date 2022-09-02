@@ -6,7 +6,10 @@
   font-family: 'Nanum Myeongjo', serif;
 }
 
-/* Title or Logo part */
+
+/* Title and Logo part */
+
+
 
 .rowBar{
   margin: auto;
@@ -26,7 +29,6 @@ img.Logo{
   text-decoration:none; 
   color: black;
   width: max-content;
-  margin: 5px;
 }
 
 .m-auto a:hover{
@@ -50,19 +52,13 @@ img.Logo{
       visibility: hidden;
     }
 }
-/* Shadow part below the navbar */
 
-/* .shadow{
-    position: relative;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+/* Responsive part */
+
+@media screen and (max-width: 1024px) {
+
+.m-auto a{
+  margin: 0 auto 0 auto;
 }
 
-.shadow:before,
-.shadow:after{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    top: 50%;
-    bottom: 0;
-} */
+}
