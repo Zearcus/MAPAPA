@@ -61,6 +61,7 @@ function Home(props) {
                 <div>
 
                     <UserCard
+                        className="Card"
                         float
                         header={profiles.attributes.Cover.data.attributes.url && `http://localhost:1337${profiles.attributes.Cover.data.attributes.url}`}
                         avatar={profiles.attributes.Profiles.data.attributes.url && `http://localhost:1337${profiles.attributes.Profiles.data.attributes.url}`}

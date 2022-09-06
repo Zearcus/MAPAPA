@@ -98,4 +98,10 @@ h2.CrewPresentation{
   text-align: center;
   margin-top: 200px;
 }
+
+.Card{
+  width: auto;
+  margin: 0 auto 0 auto;
+}
+
 }
