@@ -28,8 +28,8 @@ h1.title {
   letter-spacing: 8px;
   display: block;
   text-align: center;
-  padding-top: 300px;
-  padding-bottom: 250px;
+  padding-top: 500px;
+  padding-bottom: 500px;
   margin: 0 auto 0 auto;
   position: relative;
   animation: text 4s 1;
@@ -56,7 +56,7 @@ h1.title {
 .presentation{
   /* margin: auto; */
   display: block;
-  margin: 150px auto 30px auto;
+  margin: auto auto 30px auto;
   padding: 50px;
   color: black;
   font-size: 20px;
