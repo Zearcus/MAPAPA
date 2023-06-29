@@ -1,5 +1,11 @@
 {
+<<<<<<< Updated upstream
 	"latest": "4.7.1",
 	"lastUpdateCheck": 1677951957856,
 	"lastNotification": 1677951957846
+=======
+	"latest": "4.11.3",
+	"lastUpdateCheck": 1688049634691,
+	"lastNotification": 1688049634677
+>>>>>>> Stashed changes
 }
